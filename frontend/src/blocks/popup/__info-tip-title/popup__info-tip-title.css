@@ -1,0 +1,12 @@
+.popup__info-tip-title {
+  /* max-width: 358px;
+    width: 100%; */
+  /* min-height: 58px; */
+  /* color: rgb(0, 0, 0); */
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 900;
+  text-align: center;
+  margin: 0 auto 23px;
+  padding: 0;
+}

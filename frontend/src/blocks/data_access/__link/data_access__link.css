@@ -1,0 +1,8 @@
+.data_access__link {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.data_access__link:hover {
+  opacity: 0.6;
+}

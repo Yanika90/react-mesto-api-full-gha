@@ -1,0 +1,14 @@
+{
+  "extends": "airbnb-base",
+  "rules": {
+    "no-underscore-dangle": ["error", { "allow": ["_id"] }],
+    "comma-dangle": "off",
+    "function-paren-newline": "off",
+    "import/no-extraneous-dependencies": "off",
+    "implicit-arrow-linebreak": "off",
+    "operator-linebreak": "off",
+    "no-console": "off",
+    "object-curly-newline": "off",
+    "linebreak-style": "off"
+  }
+}

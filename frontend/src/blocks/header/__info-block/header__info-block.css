@@ -1,0 +1,22 @@
+.header__info-block {
+  display: flex;
+  flex-direction: row;
+  padding-top: 51px;
+  padding-bottom: 46px;
+  gap: 24px;
+}
+@media (max-width: 1040px) {
+  .header__info-block {
+    padding-right: 40px;
+  }
+}
+
+@media (max-width: 460px) {
+  .header__info-block {
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 16px;
+    gap: 14px;
+    text-align: end;
+  }
+}

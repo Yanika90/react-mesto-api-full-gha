@@ -1,0 +1,16 @@
+.footer {
+  width: 100%;
+  max-width: 880px;
+  max-height: 18px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 67px auto 60px;
+}
+
+@media (max-width: 1050px) {
+  .footer {
+    max-width: 282px;
+    margin: 48px auto 36px;
+  }
+}

@@ -1,0 +1,8 @@
+.photo {
+  background-color: rgb(255, 255, 255);
+  max-width: 282px;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}

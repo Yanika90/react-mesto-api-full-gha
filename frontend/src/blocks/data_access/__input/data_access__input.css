@@ -1,0 +1,25 @@
+.data_access__input {
+  width: 100%;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 500;
+  font-family: inherit;
+  border: 0;
+  box-sizing: border-box;
+  border-bottom: 2px solid rgb(204, 204, 204);
+  background-color: transparent;
+  margin-bottom: 30px;
+  padding: 0 0 10px;
+}
+
+.data_access__input:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 460px) {
+  .data_access__input {
+    font-size: 14px;
+    font-weight: 400;
+  }
+}

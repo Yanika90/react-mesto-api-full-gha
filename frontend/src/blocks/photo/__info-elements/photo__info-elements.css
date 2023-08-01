@@ -1,0 +1,7 @@
+.photo__info-elements {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 22px 20px 21px;
+}
