@@ -132,9 +132,28 @@ module.exports.login = (req, res, next) => {
       const token = jwt.sign({ _id: user._id }, 'some-secret-key', {
         expiresIn: '7d',
       });
-      res
-        .cookie('jwt', token, { httpOnly: true })
-        .send({ message: 'Авторизация прошла успешно', token });
+      res.cookie('jwt', token, {
+        maxAge: 604800,
+        httpOnly: true,
+        sameSite: true,
+      });
+      res.send({
+        message: 'Авторизация прошла успешно',
+        user: {
+          _id: user._id,
+          name: user.name,
+          about: user.about,
+          avatar: user.avatar,
+          email: user.email,
+        },
+      });
     })
     .catch(next);
+};
+
+module.exports.logout = (req, res) => {
+  if (res.cookie) {
+    res.clearCookie('jwt');
+    res.send({ message: 'Успешный выход из аккаунта' });
+  }
 };
