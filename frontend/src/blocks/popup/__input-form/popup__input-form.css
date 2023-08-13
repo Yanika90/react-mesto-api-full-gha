@@ -1,0 +1,15 @@
+.popup__input-form {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+@media (max-width: 460px) {
+    .popup__input-form {
+        max-width: 238px;
+        margin-right: 0;
+    }
+}

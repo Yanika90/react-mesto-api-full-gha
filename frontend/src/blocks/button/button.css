@@ -1,0 +1,9 @@
+.button {
+    background-color: transparent;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    border: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: opacity 0.2s ease-in;
+}
