@@ -12,15 +12,18 @@ const {
   validationLogin,
   validationCreateUser,
 } = require('./middlewares/validation');
+const { requestLogger, errorLogger } = require('./middlewares/logger');
 const { createUser, login, logout } = require('./controllers/users');
 const NotFound = require('./utils/not-found');
 
-const { PORT = 4000, DB_URL = 'mongodb://127.0.0.1:27017/mestodb' } =
+const { PORT = 3000, DB_URL = 'mongodb://127.0.0.1:27017/mestodb' } =
   process.env;
 
 const app = express();
 
-app.use(cors({ origin: 'http://localhost:3000', credentials: true }));
+app.use(cors({ origin: 'http://localhost:3001', credentials: true }));
+
+app.use(requestLogger);
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -48,14 +51,10 @@ mongoose
     console.log('База данных не подключена');
   });
 
+app.use(errorLogger);
 app.use(errors());
 app.use(error);
 
 app.listen(PORT, () => {
   console.log(`App listening on ${PORT}`);
 });
-
-// app.use((req, res, next) => {
-//   req.user = {
-//     _id: '64b02e9f61d7d039fca34a5e',
-//   };
