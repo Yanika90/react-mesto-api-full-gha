@@ -1,4 +1,5 @@
-export const BASE_URL = 'http://localhost:3000';
+export const BASE_URL = 'https://mesto.yanika90.nomoreparties.co';
+// export const BASE_URL = 'http://localhost:3000';
 
 function checkResponse(res) {
   if (res.ok) {

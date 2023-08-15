@@ -88,7 +88,8 @@ export class Api {
 }
 
 const api = new Api({
-  url: 'http://localhost:3000',
+  url: ' https://api.mesto.yanika90.nomoreparties.co',
+  // url: 'http://localhost:3000',
   headers: {
     'Content-Type': 'application/json'
   }
