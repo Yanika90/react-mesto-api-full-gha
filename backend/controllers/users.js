@@ -7,6 +7,8 @@ const BadRequest = require('../utils/bad-request');
 const NotFound = require('../utils/not-found');
 const NotUnique = require('../utils/not-unique');
 
+const { NODE_ENV, JWT_SECRET } = process.env;
+
 // все юзеры
 module.exports.getUsers = (req, res, next) => {
   User.find({})
@@ -129,9 +131,13 @@ module.exports.login = (req, res, next) => {
 
   return User.findUserByCredentials(email, password)
     .then((user) => {
-      const token = jwt.sign({ _id: user._id }, 'some-secret-key', {
-        expiresIn: '7d',
-      });
+      const token = jwt.sign(
+        { _id: user._id },
+        NODE_ENV === 'production' ? JWT_SECRET : 'some-secret-key',
+        {
+          expiresIn: '7d',
+        }
+      );
       res.cookie('jwt', token, {
         maxAge: 604800,
         httpOnly: true,
