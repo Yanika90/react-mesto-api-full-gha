@@ -10,7 +10,7 @@
 
 ## Ссылки на проект
 
-IP-адрес 51.250.99.170
+IP 51.250.99.170
 
 Frontend https://mesto.yanika90.nomoreparties.co
 
