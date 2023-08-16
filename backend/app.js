@@ -24,10 +24,7 @@ const app = express();
 // app.use(cors({ origin: 'http://localhost:3001', credentials: true }));
 app.use(
   cors({
-    origin: [
-      'http://localhost:3001',
-      'https://mesto.yanika90.nomoreparties.co',
-    ],
+    origin: 'https://mesto.yanika90.nomoreparties.co',
     credentials: true,
   })
 );
