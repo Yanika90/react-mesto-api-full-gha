@@ -1,5 +1,3 @@
-[![Статус тестов](../../actions/workflows/tests.yml/badge.svg)](../../actions/workflows/tests.yml)
-
 # Проект Mesto: фронтенд и бэкенд
 
 **Сервис «Mesto»** - это интерактивная страница, куда пользователь может добавлять фотографии, удалять их, а также ставить лайки.
@@ -37,4 +35,6 @@ IP 51.250.99.170
 Frontend https://mesto.yanika90.nomoreparties.co
 
 Backend https://api.mesto.yanika90.nomoreparties.co
+
+[![Статус тестов](../../actions/workflows/tests.yml/badge.svg)](../../actions/workflows/tests.yml)
  -->
