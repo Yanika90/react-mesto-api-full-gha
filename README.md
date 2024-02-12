@@ -29,7 +29,7 @@
 4. Запустить сборку `npm start`
 5. Открыть `http://localhost:3000` в окне браузера.
 
-
+<!-- 
 ## Ссылки на проект
 
 IP 51.250.99.170
@@ -37,3 +37,4 @@ IP 51.250.99.170
 Frontend https://mesto.yanika90.nomoreparties.co
 
 Backend https://api.mesto.yanika90.nomoreparties.co
+ -->
